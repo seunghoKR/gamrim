@@ -1,0 +1,12 @@
+# Logs & Cache
+cache/
+*.log
+.DS_Store
+Thumbs.db
+
+# Environment & Temp
+.env
+temp_*
+*.tmp
+*.bak
+cookies.txt

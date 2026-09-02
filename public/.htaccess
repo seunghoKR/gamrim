@@ -1,0 +1,20 @@
+Options -Indexes
+RewriteEngine On
+RewriteBase /
+
+# 보안: 민감 파일 접근 차단
+<FilesMatch "\.(sql|env|log|json)$">
+  Order Allow,Deny
+  Deny from all
+</FilesMatch>
+
+# 레거시 SEO 301 리디렉션
+RewriteRule ^page_about/?$ /about [R=301,L]
+RewriteRule ^page_facility/?$ /rental [R=301,L]
+RewriteRule ^page_stay/?$ /stay [R=301,L]
+RewriteRule ^page_worship/?$ /worship [R=301,L]
+
+# Front-Controller
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [QSA,L]

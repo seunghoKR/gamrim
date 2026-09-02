@@ -1,0 +1,20 @@
+{
+  "name": "감림산기도원",
+  "short_name": "감림산",
+  "description": "1968년 설립 58년 기도의 역사, 말씀과 기도로 회복되는 은혜의 동산",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#1a365d",
+  "background_color": "#faf7f2",
+  "lang": "ko",
+  "icons": [
+    {"src": "/assets/images/icon-192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "/assets/images/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}
+  ],
+  "shortcuts": [
+    {"name": "시설 대관", "url": "/rental", "description": "대관 신청 및 현황 조회"},
+    {"name": "숙소 예약", "url": "/stay", "description": "객실 예약 및 조회"},
+    {"name": "중보기도", "url": "/prayer", "description": "비공개 중보기도 신청"}
+  ]
+}
