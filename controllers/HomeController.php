@@ -19,6 +19,9 @@ class HomeController {
         } catch(Exception $e) {}
         require_once ROOT_PATH.'/views/main.php';
     }
+    public function about(): void {
+        require_once ROOT_PATH.'/views/about.php';
+    }
     public function guide(): void {
         require_once ROOT_PATH.'/views/guide.php';
     }

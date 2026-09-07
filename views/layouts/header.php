@@ -59,14 +59,17 @@
         <!-- 데스크탑 GNB -->
         <nav class="hidden md:flex space-x-6 text-sm font-medium">
             <a href="/" class="hover:text-gold transition">홈</a>
-            <a href="/rental" class="hover:text-gold transition">시설대관</a>
+            <a href="/about" class="hover:text-gold transition font-semibold text-navy">기도원소개</a>
+            <a href="/#worship" class="hover:text-gold transition">연중예배·집회</a>
+            <a href="/rental" class="hover:text-gold transition">행사대관</a>
             <a href="/stay" class="hover:text-gold transition">숙소예약</a>
-            <a href="/guide" class="hover:text-gold transition">처음오셨나요?</a>
             <a href="/prayer" class="hover:text-gold transition">중보기도</a>
+            <a href="/#partners" class="hover:text-gold transition">동역기관</a>
+            <a href="/guide" class="hover:text-gold transition">오시는 길</a>
         </nav>
 
         <div class="flex items-center space-x-3">
-            <!-- 기도원 문의 직통전화 버튼 (셔틀버스 삭제) -->
+            <!-- 기도원 문의 직통전화 버튼 -->
             <a href="tel:055-374-4111" class="hidden md:inline-flex items-center space-x-1.5 bg-navy text-white px-4 py-2 rounded-full text-xs font-semibold hover:bg-navy-800 transition shadow-sm">
                 <svg class="w-3.5 h-3.5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
                 <span>문의 055-374-4111</span>
@@ -84,10 +87,13 @@
     <!-- 모바일 메뉴 패널 -->
     <div id="mobile-menu-panel" class="hidden md:hidden bg-white border-t border-gray-100">
         <a href="/" class="block px-4 py-3 border-b text-navy font-medium">홈</a>
-        <a href="/rental" class="block px-4 py-3 border-b text-navy font-medium">시설대관</a>
-        <a href="/stay" class="block px-4 py-3 border-b text-navy font-medium">숙소예약</a>
-        <a href="/guide" class="block px-4 py-3 border-b text-navy font-medium">처음오셨나요? (오시는 길)</a>
-        <a href="/prayer" class="block px-4 py-3 border-b text-navy font-medium">중보기도</a>
+        <a href="/about" class="block px-4 py-3 border-b text-navy font-bold bg-cream/60">📖 기도원 소개 (58년 역사·원장·원목)</a>
+        <a href="/#worship" class="block px-4 py-3 border-b text-navy font-medium">✝ 연중예배·집회 안내</a>
+        <a href="/rental" class="block px-4 py-3 border-b text-navy font-medium">교회·기관 행사대관</a>
+        <a href="/stay" class="block px-4 py-3 border-b text-navy font-medium">개인·가족 숙소예약</a>
+        <a href="/prayer" class="block px-4 py-3 border-b text-navy font-medium">중보기도 요청</a>
+        <a href="/#partners" class="block px-4 py-3 border-b text-navy font-medium">동역기관 (오병이어캠프·혜성원)</a>
+        <a href="/guide" class="block px-4 py-3 border-b text-navy font-medium">오시는 길 / 이용안내</a>
         <?php if(isset($_SESSION['user_id'])): ?>
             <div class="px-4 py-3 bg-gray-50 flex justify-between items-center">
                 <span class="text-sm font-bold text-navy"><?= htmlspecialchars($_SESSION['user_name']) ?> 성도님</span>

@@ -34,8 +34,9 @@ require_once ROOT_PATH . "/controllers/AuthController.php";
 
 $router = new Router();
 
-// 메인 & 이용안내
+// 메인 & 소개 & 이용안내
 $router->get("/", "HomeController::index");
+$router->get("/about", "HomeController::about");
 $router->get("/guide", "HomeController::guide");
 
 // 회원 가입 & 로그인 & 로그아웃
